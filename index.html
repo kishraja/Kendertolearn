@@ -5,45 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kender Learn - Welcome</title>
     <style>
-        body {
+        /* General Reset */
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: Arial, sans-serif;
+            background-color: #1b1b1f; /* Dark color from the logo */
+            color: #ffffff; /* White text */
             text-align: center;
-            background-color: #f4f4f9;
-            color: #333;
         }
 
         header {
-            padding: 20px;
-            background-color: #6200ea;
-            color: #fff;
+            padding: 50px 20px;
+            background-color: #3a1d6e; /* Purple shade from the logo */
         }
 
         header img {
-            width: 100px;
+            width: 120px; /* Adjust size for the logo */
             height: auto;
-            display: block;
-            margin: 0 auto 10px;
+            margin-bottom: 20px;
         }
 
         h1 {
-            text-transform: uppercase;
             font-size: 2.5rem;
-            margin: 20px 0;
+            text-transform: uppercase;
+            color: #ffffff; /* White heading */
+            margin-bottom: 10px;
         }
 
         p {
             font-size: 1.2rem;
-            color: #555;
+            color: #cccccc; /* Light gray text for better contrast */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            header img {
+                width: 90px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            header {
+                padding: 60px 20px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- Add your logo URL in the src attribute -->
+        <!-- Reference your uploaded logo -->
         <img src="logo.png" alt="Kender Learn Logo">
         <h1>Welcome to Kender Learn</h1>
-        <p>Your journey to learning starts here!</p>
+        <p>Innovate. Iterate. Dominate.</p>
     </header>
 </body>
 </html>
